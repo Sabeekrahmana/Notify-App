@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1350px;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.notification_cont {
+    background-color: #fff;
+    width: 700px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.notification_head {
+    display: flex;
+    align-items: center;
+}
+
+#num-notif {
+    background-color: blue;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#num-notif:hover {
+    background-color: skyblue;
+}
+
+#notif-time {
+    color: gray;
+}
+
+#mark-as-read {
+    color: gray;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+#mark-as-read:hover {
+    color: black;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.notification-double {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-double>div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img {
+    width: 50px;
+}
+
+b {
+    color: navy;
+}
+
+.description {
+    margin-left: 10px;
+}
+
+.unread {
+    background-color: rgb(233, 246, 253);
+}
+
+.msg {
+    padding: 10px;
+    width: 550px;
+    border: 1px solid rgb(225, 223, 223);
+    margin-left: 80px;
+}
+
+@media only screen and (max-width:600px) {
+    .notification_cont {
+        width: 500px;
+    }
+
+    .notification_head {
+        font-size: 8px;
+    }
+
+    #num-notif {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    #mark-as-read {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .msg {
+        width: 240px;
+        margin-left: 60px;
+    }
+}
